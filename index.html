@@ -4,7 +4,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Συνέντευξη με τον GianLuca Vacchi: Ένα χαμόγελο εκατομμυρίου. Η ιστορία της μεταμόρφωσης του "εκατομμυριούχου χορευτή"</title>
+    <title>Interviu cu Gianluca Vacchi: Un zâmbet de milioane. Povestea transformării „milionarului dansator”</title>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="favicon.ico">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/roulette.css" type="text/css">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Συνέντευξη με τον GianLuca Vacchi: Ένα χαμόγελο εκατομμυρίου. Η ιστορία της μεταμόρφωσης του "εκατομμυριούχου χορευτή"">
+    <meta property="og:title" content="Interviu cu Gianluca Vacchi: Un zâmbet de milioane. Povestea transformării „milionarului dansator”">
 
 
 <style type="text/css">
@@ -99,22 +99,39 @@ a:visited,
                 -webkit-filter: blur(10px);
             }
         </style>
-        
+    
         <!-- Header -->
-        <style>
+        <style id="font-faces">
             @font-face {
-                font-family: "Limerick Serial";
-                src: url(fonts/limerick_serial-regular-webfont.woff2) format("woff2");
+                font-family: FBDidotS;
+                font-weight: 300;
+                font-style: normal;
                 font-display: swap;
-                font-weight: 400;
-                font-style: normal
+                src: url("fonts/FBDidotS-Light.woff") format("woff");
             }
+        
             @font-face {
-                font-family: "Limerick Serial";
-                src: url(fonts/limerick_serial-bold-webfont.woff2) format("woff2");
-                font-display: swap;
+                font-family: VogueAvantGarde;
                 font-weight: 700;
-                font-style: normal
+                font-style: normal;
+                font-display: swap;
+                src: url("fonts/VogueAvantGarde-Bold.woff") format("woff");
+            }
+        
+            @font-face {
+                font-family: VogueAvantGarde;
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+                src: url("fonts/VogueAvantGarde-DemiBold.woff") format("woff");
+            }
+        
+            @font-face {
+                font-family: VogueAvantGarde;
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+                src: url("fonts/VogueAvantGarde-Medium.woff") format("woff");
             }
         </style>
     
@@ -123,25 +140,21 @@ a:visited,
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
             }
             .webt-header__top {
+                border-bottom: 1px solid rgb(224, 224, 224);
                 width: 100%;
-                height: 80px;
+                height: 64px;
                 position: relative;
-                padding-top: 32px;
-                margin-bottom: 24px;
             }
             .webt-top__wrapper {
+                padding: 16px;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: space-between;
                 margin: 0 auto;
                 width: 100%;
-                max-width: 1240px;
                 height: 100%;
-                align-items: center;
-                position: relative;
             }
             .webt-top__menu {
-                display: none;
-                
+                display: block;
                 text-decoration: none;
                 -webkit-transition: all .3s;
                 -moz-transition: all .3s;
@@ -154,27 +167,26 @@ a:visited,
                 opacity: 0.8;
             }
             .webt-top__logo {
-                width: 120px;
-                height: 48px;
+                width: 128px;
+                height: 30px;
                 display: block;
                 position: absolute;
-                left: 0;
+                left: 50%;
                 top: 50%;
-    
-                -webkit-transform: translateY(-50%);
-                -moz-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                -o-transform: translateY(-50%);
-                transform: translateY(-50%);
+            
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
             }
             .webt-logo__img {
                 max-width: 100%;
-                height: 48px;
             }
             .webt-top__actions {
                 display: block;
-                height: 33px;
-                width: 330px;
+                height: 35px;
+                width: 290px;
                 background-image: url(images/header-actions.png);
                 background-position: center;
                 background-repeat: no-repeat;
@@ -182,17 +194,16 @@ a:visited,
                 background-size: contain;
             }
             .webt-header__bottom {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                max-width: 1240px;
-                margin: 0 auto;
-                height: 48px;
+            
             }
             .webt-bottom__nav {
+                max-width: 920px;
+                margin: 0 auto;
+                height: 48px;
+            
                 display: flex;
                 align-items: stretch;
-                justify-content: flex-start;
+                justify-content: center;
                 gap: 16px;
             }
             .webt-nav__link,
@@ -204,17 +215,16 @@ a:visited,
                 justify-content: center;
                 align-items: center;
                 height: 100%;
-    
+            
                 text-decoration: none;
-                border-bottom: 1px solid transparent;
-    
+            
                 color: #000;
                 text-transform: uppercase;
-                font-family: "Limerick Serial"!important;
-                font-size: 14px;
+                font-family: VogueAvantGarde!important;
+                font-size: 13px;
                 font-weight: 600;
                 letter-spacing: 0.127811em;
-    
+            
                 -webkit-transition: all .3s;
                 -moz-transition: all .3s;
                 -ms-transition: all .3s;
@@ -232,163 +242,93 @@ a:visited,
             .webt-nav__link:hover {
                 color: #000;
                 text-decoration: none;
-    
-                border-bottom: 1px solid #000000;
+            
+                opacity: 0.8;
             }
-
+        
             .webt-subheader {
                 width: 100%;
                 margin-bottom: 48px;
             }
             .webt-subheader__head {
-                margin-top: 24px;
                 width: 100%;
-                height: 215px;
+                height: 160px;
                 display: flex;
                 justify-content: center;
                 text-align: center;
                 align-items: center;
-                flex-direction: column;
-                gap: 16px;
             }
             .webt-head__title {
-                font-size: 48px;
-                font-family: "Limerick Serial"!important;
+                font-size: 64px;
+                font-family: FBDidotS!important;
                 letter-spacing: 0.0416667em;
-                font-weight: 700;
+                font-weight: 300;
                 margin: 0 auto;
                 display: block;
-                color: rgb(0, 0, 0);
-            }
-            .webt-head__text {
-                text-align: center;
-                font-size: 18px;
-                font-family: "Limerick Serial"!important;
-                font-weight: 400;
-                margin: 0 auto;
-                display: block;
-                color: rgba(0,0,0,.95);
-                max-width: 900px;
             }
             .webt-subheader__nav {
                 border-top: 1px solid rgb(224, 224, 224);
                 border-bottom: 1px solid rgb(224, 224, 224);
             }
-            .webt-bottom__subscribe,
-            .webt-bottom__subscribe:focus,
-            .webt-bottom__subscribe:active {
-                color: #000;
-                text-transform: uppercase;
-                font-family: "Limerick Serial"!important;
-                font-size: 14px;
-                font-weight: 600;
-                letter-spacing: 0.127811em;
-                text-decoration: none;
-                -webkit-transition: all .3s;
-                -moz-transition: all .3s;
-                -ms-transition: all .3s;
-                -o-transition: all .3s;
-                transition: all .3s;
-                border-bottom: 1px solid transparent;
-            }
-            .webt-bottom__subscribe:hover {
-                color: #000;
-                text-decoration: none;
-    
-                border-bottom: 1px solid #000000;
-            }
-            
-            .webt-head__category,
-            .webt-head__category:focus,
-            .webt-head__category:active {
-                color: #000;
-                text-transform: uppercase;
-                font-family: "Limerick Serial"!important;
-                font-size: 14px;
-                font-weight: 600;
-                letter-spacing: 0.127811em;
-                text-decoration: none;
-                border-bottom: 1px solid transparent;
-                -webkit-transition: all .3s;
-                -moz-transition: all .3s;
-                -ms-transition: all .3s;
-                -o-transition: all .3s;
-                transition: all .3s;
-            }
-            .webt-head__category:hover {
-                color: #000;
-                text-decoration: none;
-    
-                border-bottom: 1px solid #000000;
-            }
-
-            @media (max-width: 1240px) {
-                .webt-header__top,
-                .webt-header__bottom {
-                    padding-left: 12px;
-                    padding-right: 12px;
-                }
-            }
+        
             @media (max-width: 960px) {
-            
-            }
-            @media (max-width: 768px) {
-                .webt-header__bottom {
+                .webt-bottom__nav {
                     display: none;
                 }
                 .webt-header__top {
-                    padding-top: 0;
-                    height: 40px;
-                    margin-bottom: 0;
+                    border-bottom: none;
                 }
-                .webt-top__logo {
-                    height: 32px;
-                    left: 50%;
-                    -webkit-transform: translate(-50%, -50%);
-                    -moz-transform: translate(-50%, -50%);
-                    -ms-transform: translate(-50%, -50%);
-                    -o-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
+                .webt-head__text {
+                    padding-right: 12px;
+                    padding-left: 12px;
                 }
-                .webt-logo__img {
-                    height: 32px;
+                .webt-head__title {
+                    font-size: 48px;
                 }
+                .webt-subheader__head {
+                    height: 180px;
+                }
+                .webt-subheader__nav .webt-bottom__nav {
+                    display: flex;
+                }
+            }
+            @media (max-width: 768px) {
                 .webt-top__actions {
-                    height: 33px;
-                    width: 33px;
+                    width: 32px;
+                    background-position: right;
                     -webkit-background-size: cover;
                     background-size: cover;
-                    background-position: left;
                 }
-                .webt-top__menu {
-                    display: block;
+                .webt-header__top {
+                    height: 54px;
                 }
                 .webt-top__wrapper {
-                    justify-content: space-between;
-                }
-                .webt-subheader__head {
-                    margin-top: 0;
-                }
-                .webt-subheader__head {
-                    height: auto;
-                    gap: 8px;
-                    padding-top: 16px;
+                    padding: 12px;
                 }
                 .webt-head__title {
                     font-size: 32px;
                 }
+                .webt-subheader__head {
+                    height: auto;
+                    gap: 12px;
+                    padding: 24px 0;
+                }
                 .webt-head__text {
-                    max-width: calc(100% - 24px);
-                    font-size: 16px;
+                    font-size: 14px;
+                }
+                .webt-subheader__nav .webt-bottom__nav {
+                    flex-wrap: nowrap;
+                    white-space: nowrap;
+                    overflow-x: scroll;
+                    justify-content: flex-start;
+                    padding: 0 12px;
+                    height: 36px;
+                }
+                .webt-nav__link, .webt-nav__link:focus, .webt-nav__link:active {
+                    font-size: 12px;
                 }
             }
         </style>
-        <svg class="mntl-svg-resource is-hidden" style="display:none;">
-            <defs>
-                <symbol id="icon-logo">
-                    <svg viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M74.1138 19.7927H79.5993C78.9095 28.1443 67.359 28.2109 66.3494 21.5882V25.9005H58.3848V21.5415C57.6902 25.8035 55.2516 26.3913 54.1828 26.3883C53.2862 26.3851 51.0886 25.6482 50.2765 23.4015L50.3544 25.8475C50.3708 27.3661 51.3408 28.3272 52.3712 28.4655V31.997L43.0779 32L43.0773 28.4655C43.8578 28.4438 45.1087 27.6781 45.122 25.9737V19.5737C44.8368 21.1827 43.6448 26.386 37.9291 26.386C32.265 26.386 30.9839 20.8912 30.7411 20.0854C29.6831 26.0724 25.7021 26.4023 23.9539 26.3803C20.8139 26.3402 18.9348 24.18 18.8881 24.1324C16.9992 22.2143 16.6357 19.309 16.7118 16.1764C16.7118 15.5461 16.8734 14.3205 16.9299 13.7187C14.8982 15.9015 13.0149 15.6297 10.7798 15.7126L8.90161 15.7094V19.2882C8.89983 20.7282 9.42872 21.5896 11.0362 21.6012V25.9062H0V21.6914C1.6075 21.6795 2.15751 20.7404 2.15572 19.3004V6.53707C2.15602 6.23247 2.08106 4.2585 0.00654421 4.24303V0H11.9158C14.1602 0 15.7564 0.68387 16.8305 1.52986C18.8173 3.09452 19.2135 5.7836 19.3747 7.77482C22.4092 5.13572 29.5983 4.54674 30.8018 12.4459C32.1011 6.42731 36.5366 5.97159 37.5754 5.96743C39.4396 5.96059 42.6239 7.08708 43.6573 10.1319V6.37793H50.1813V8.79334C50.6617 6.97048 52.2713 5.97962 53.9032 5.9701C55.4768 5.96059 58.6998 7.70819 59.527 14.3613V5.50219C59.5196 4.22488 58.7388 3.56541 57.4611 3.57195L57.457 0.0389678H65.0489V14.3672C65.7411 8.01963 69.283 5.98944 72.2647 5.98914C75.2923 5.98855 77.4385 7.67725 78.5383 9.83684C79.9465 12.6003 79.8459 15.5214 79.7611 17.4138L70.5237 17.4162C70.491 17.7788 70.5252 18.3883 70.5534 18.9491C70.6317 20.5206 71.1484 21.9427 72.379 21.9362C73.3808 21.9415 73.9091 20.9897 74.1138 19.7927ZM24.1279 21.9362C25.1295 21.9416 25.6584 21.0007 25.8627 19.8031L30.6742 19.801C30.4306 18.6004 30.4017 18.3479 30.3753 17.4147L22.2729 17.4162C22.2396 17.7788 22.2747 18.3883 22.3027 18.9491C22.3806 20.5206 22.8973 21.9427 24.1279 21.9362ZM35.9158 16.2124C35.9158 19.3964 36.4881 21.9594 37.9249 21.9787C39.4006 21.9978 39.934 19.3964 39.934 16.2124C39.934 13.0274 39.3619 10.4663 37.9249 10.446C36.5271 10.4264 35.9158 13.0274 35.9158 16.2124ZM24.0946 10.3327C22.864 10.3262 22.3083 11.8316 22.2304 13.4031C22.2036 13.9362 22.1941 13.9603 22.2304 14.3577H25.8812C25.9175 13.9603 25.9076 13.9362 25.8812 13.4031C25.8029 11.8316 25.3252 10.3262 24.0946 10.3327ZM72.3448 10.449C71.1139 10.4425 70.5969 11.8316 70.5189 13.4031C70.4928 13.9362 70.4829 13.9603 70.5189 14.3577H74.17C74.2063 13.9603 74.1965 13.9362 74.17 13.4031C74.0921 11.8316 73.5751 10.4425 72.3448 10.449ZM50.5273 19.1103C50.5273 20.7118 50.9214 21.9285 52.0443 21.9285C53.2987 21.9285 54.048 20.2279 54.048 16.2299C54.048 11.8403 53.3713 10.3339 52.1919 10.2821C51.0502 10.2322 50.4675 11.2028 50.5273 13.2053V19.1103ZM8.92006 10.8887H10.4678C11.8688 10.8497 12.3576 10.0049 12.3576 7.86198C12.3576 5.91299 11.6734 4.90042 10.4678 4.90042H8.92006V10.8887Z" fill="#20B1EA"></path></svg> </symbol>
-            </defs>
-        </svg>
         <header class="webt-header">
             <div class="webt-header__top">
                 <div class="webt-top__wrapper">
@@ -396,30 +336,40 @@ a:visited,
                         <svg class="ButtonIcon-iVrqPc hVlDJB button-icon icon icon-menu" focusable="false" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M8 10h16v2H8v-2zm0 5h16v2H8v-2zm0 5h16v2H8v-2z" fill-rule="evenodd"></path></svg>
                     </a>
                     <a href="#roulette" class="webt-top__logo">
-                        <svg class="icon icon-logo webt-logo__img">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo"></use>
-                        </svg>
+                        <img src="images/logo.svg" alt="" class="webt-logo__img">
                     </a>
                     <a href="#roulette" class="webt-top__actions"></a>
                 </div>
             </div>
             <div class="webt-header__bottom">
                 <nav class="webt-bottom__nav">
-                    <a href="#roulette" class="webt-nav__link">NEWS</a>
-                    <a href="#roulette" class="webt-nav__link">ENTERTAINMENT</a>
-                    <a href="#roulette" class="webt-nav__link">ROYALS</a>
-                    <a href="#roulette" class="webt-nav__link">LIFESTYLE</a>
-                    <a href="#roulette" class="webt-nav__link">STYLEWATCH</a>
+                    <a href="#roulette" class="webt-nav__link">FASHION</a>
+                    <a href="#roulette" class="webt-nav__link">BEAUTY</a>
+                    <a href="#roulette" class="webt-nav__link">CULTURE</a>
+                    <a href="#roulette" class="webt-nav__link">LIVING</a>
+                    <a href="#roulette" class="webt-nav__link">RUNWAY</a>
                     <a href="#roulette" class="webt-nav__link">SHOPPING</a>
+                    <a href="#roulette" class="webt-nav__link">VIDEO</a>
+                    <a href="#roulette" class="webt-nav__link">VOGUE CLUB</a>
+                    <a href="#roulette" class="webt-nav__link">PHOTOVOGUE</a>
+                    <a href="#roulette" class="webt-nav__link">PODCAST</a>
                 </nav>
-                <a href="#roulette" class="webt-bottom__subscribe">SUBSCRIBE</a>
             </div>
         </header>
         <div class="webt-subheader">
             <div class="webt-subheader__head">
-                <a href="#roulette" class="webt-head__category">LIFESTYLE</a>
-                <h2 class="webt-head__title">Health</h2>
-                <p class="webt-head__text">Get the latest health news and features from PEOPLE.com, including breaking news about celebrity health, wellness and explainers on medical conditions.</p>
+                <h2 class="webt-head__title">Living</h2>
+            </div>
+            <div class="webt-subheader__nav">
+                <nav class="webt-bottom__nav">
+                    <a href="#roulette" class="webt-nav__link --active">VIEW ALL</a>
+                    <a href="#roulette" class="webt-nav__link">HOMES</a>
+                    <a href="#roulette" class="webt-nav__link">TRAVEL</a>
+                    <a href="#roulette" class="webt-nav__link">FOOD</a>
+                    <a href="#roulette" class="webt-nav__link">WEDDINGS</a>
+                    <a href="#roulette" class="webt-nav__link">PARTIES</a>
+                    <a href="#roulette" class="webt-nav__link">ROYALS</a>
+                </nav>
             </div>
         </div>
         <!-- // Header -->
@@ -430,51 +380,51 @@ a:visited,
                     <main id="main" class="site-main article-card">
                         <article id="post-58" class="article-post post-58 post type-post status-publish format-standard has-post-thumbnail category-zarabotki category-rejtingi">
                             <div class="entry-content" itemprop="articleBody">
-                                <h2 class="entry-title" itemprop="headline">Συνέντευξη με τον GianLuca Vacchi: Ένα χαμόγελο εκατομμυρίου. Η ιστορία της μεταμόρφωσης του "εκατομμυριούχου χορευτή"</h2>
+                                <h2 class="entry-title" itemprop="headline">Interviu cu Gianluca Vacchi: Un zâmbet de milioane. Povestea transformării „milionarului dansator”</h2>
                                 <img src="images/pics/Pic1.jpg" alt="" class="webt-article-img">
                                 <br>
-                                <p>Ο Ιταλός επιχειρηματίας GianLuca Vacchi έγινε διάσημος στο Διαδίκτυο, αφού δημοσίευσε ένα βίντεο, όπου μαζί με μια πανέμορφη καλλονή χορεύει στο δικό του γιοτ. Ηλιοκαμένος Ιταλός "macho" έγινε αμέσως δημοφιλής. Στο Διαδίκτυο τον λέγανε «εκατομμυριούχος χορευτής".</p>
-                                <p>Όμως, όπως αποδείχθηκε, ο GianLuca Vacchi δεν ήταν πάντα έτσι. Στη συνέντευξή μας, είπε ότι σε μια ωραία στιγμή αποφάσισε ότι ήταν αδύνατο να ζήσει έτσι και άρχισε να δουλεύει πάνω στην εμφάνισή του. Έκανε προσθετική μαλλιών, λίφτινγκ στο πρόσωπό του, ενέσεις ομορφιάς, υπέροχο μαύρισμα και, φυσικά, ολόλευκο χαμόγελο.</p>
-                                <p>Πλέον ο 53χρονος επιχειρηματίας είναι αγνώριστος!</p>
-                                <p><b>Δημοσιογράφος: Καλησπέρα αγαπητοί αναγνώστες! Σήμερα συναντάμε τον GianLuca Vacchi, έναν Ιταλό επιχειρηματία που έχει γίνει πραγματικός σταρ του Διαδικτύου, χάρη στα χορευτικά βίντεο και το πρωτότυπο στυλ του. GianLuca, πείτε μας πώς έγινε η δική σας μεταμόρφωση;</b></p>
-                                <p>GianLuca Vacchi: Γεια σας! Χαίρομαι που βρίσκομαι εδώ για αυτή τη συνέντευξη. Ναι, πράγματι, τον τελευταίο καιρό έχω κάνει σημαντικές αλλαγές. Η ιστορία μου ξεκίνησε όταν δημοσίευσα ένα βίντεο στη σελίδα μου στο Instagram, όπου χορεύω με μια όμορφη κοπέλα στο γιοτ μου. Αυτό το βίντεο έγινε viral και οι άνθρωποι άρχισαν να με αποκαλούν «εκατομμυριούχος χορευτής».</p>
+                                <p>Omul de afaceri italian Gianluca Vacchi a devenit cunoscut pe internet după ce a publicat un videoclip în care dansează cu o fată cu picioare lungi pe propriul său iaht. Bronzatul macho italian a devenit imediat popular Pe internet, fiind poreclit „milionarul dansator”.</p>
+                                <p>Dar, după cum s-a dovedit, Gianluca nu a arătat întotdeauna așa. În interviul nostru, el ne-a spus că la un moment dat a decis că nu poate trăi așa și a început să lucreze la aspectul său. Și-a făcut transplant de păr, și-a operat fața, și-a făcut injecții de frumusețe cu botox,, și-a cumpărat un bronz frumos și, desigur, zâmbetul său alb ca zăpada.</p>
+                                <p>Acum, omul de afaceri în vârstă de 53 de ani este de nerecunoscut!</p>
+                                <p><b>Jurnalistul: Bună ziua, dragi cititori! Astăzi ne întâlnim cu Gianluca Vacchi, omul de afaceri italian care a devenit o adevărată vedetă pe internet în urma videoclipurilor în care dansează și stilului său original. Gianluca, spune-ne, cum a avut loc transformarea ta?</b></p>
+                                <p>Gianluca Vacchi: Bună ziua! Mă bucur să fiu prezent la acest interviu. Da, într-adevăr, am făcut câteva schimbări semnificative în ultima vreme. Povestea mea a început cu faptul că am publicat pe pagina mea de Instagram un videoclip în care dansez cu o fată frumoasă pe iahtul meu. Acest videoclip a devenit viral și am fost numit „milionarul dansator”.</p>
                                 <img src="images/pics/Pic2.jpeg" alt="" class="webt-article-img">
                                 <br>
-                                <p><b>Δημοσιογράφος: Όμως, όπως καταλαβαίνω, η μεταμόρφωσή σας δεν περιορίστηκε μόνο στο χορό σε γιοτ. Πείτε μας για τις αλλαγές σας πάνω στην εμφάνιση.</b></p>
-                                <p>GianLuca Vacchi: Ναι, καταλάβατε σωστά. Πάντα έδινα περισσότερη σημασία στην εμφάνισή μου και προσπαθούσα να επιστήσω όλη την προσοχή πάνω μου. Παρόλα αυτά, συνειδητοποίησα ότι έπρεπε να αλλάξω κάτι πάνω στον εαυτό μου. Άρχισα να ασχολούμαι με την εμφάνιση και την υγεία μου. Επέλεξα αρχικά μια μεταμόσχευση μαλλιών, για να ανακτήσω τα πυκνά μαλλιά μου. Στη συνέχεια υποβλήθηκα σε διαδικασίες λίφτινγκ και ενέσεις ομορφιάς, για να διατηρήσω την εμφάνισή μου φρέσκια και νεανική.</p>
+                                <p><b>Jurnalistul: Dar, după cum înțeleg, transformarea ta nu s-a limitat doar la dansuri pe iaht. Spune-ne despre schimbările pe care le-ai făcut la aspectul tău.</b></p>
+                                <p>Gianluca Vacchi: Da, ai înțeles corect. Am acordat întotdeauna o mare importanță aspectului meu și am încercat să atrag atenția asupra mea. Cu toate acestea, am realizat că trebuie să schimb ceva la mine. Am început să lucrez la fizicul meu și la sănătatea mea. Mai întâi am decis să-mi fac un transplant de  păr pentru a-mi recupera freza bogată. Apoi am făcut proceduri de lifting facial și injecții de frumusețe pentru a păstra un aspect proaspăt și tânăr.</p>
                                 <img src="images/pics/Pic3.jpeg" alt="" class="webt-article-img">
                                 <br>
-                                <p><b>Δημοσιογράφος: Εντυπωσιακό! Ποιες άλλες αλλαγές έχετε κάνει στην ζωή σας εκτός από την εμφάνιση;</b></p>
-                                <p>GianLuca Vacchi: Εκτός από τις εξωτερικές αλλαγές, έδωσα σημασία και στη φυσική μου κατάσταση. Άρχισα να γυμνάζομαι για να είμαι σε φόρμα και γεμάτος ενέργεια. Η τακτική άσκηση και ο υγιεινός τρόπος ζωής με έχουν βοηθήσει να αισθάνομαι πιο σίγουρος και δραστήριος.</p>
+                                <p><b>Jurnalistul: Impresionant! Ce alte schimbări ai adus în viața ta, pe lângă aspect?</b></p>
+                                <p>Gianluca Vacchi: Pe lângă schimbările externe, am acordat atenție și stării mele fizice. Am început să fac sport și să mă pompez pentru a fi în formă și plin de energie. Antrenamentele regulate și stilul de viață sănătos m-au ajutat să mă simt mai încrezător și activ.</p>
                                 <img src="images/pics/Pic4.jpg" alt="" class="webt-article-img">
                                 <br>
-                                <p><b>Δημοσιογράφος: Πώς επηρέασαν αυτές οι αλλαγές την καριέρα και την προσωπική σας ζωή;</b></p>
-                                <p>GianLuca Vacchi: Η μεταμόρφωσή μου τράβηξε την προσοχή όχι μόνο διαδικτυακά, αλλά και στον επαγγελματικό μου τομέα. Χάρη στη νέα δημοτικότητα, μπόρεσα να επεκτείνω τις επιχειρηματικές μου συνεργασίες και να έχω νέες ευκαιρίες. Επιπλέον, απέκτησα μεγαλύτερη αυτοπεποίθηση, κάτι που είχε θετική επίδραση στις σχέσεις και στην προσωπική μου ζωή.</p>
-                                <p><b>Δημοσιογράφος: Είναι αδύνατο να μην παρατηρήσω ότι έχετε κάνει αλλαγές και με τα δόντια σας. Μπορείτε να μας πείτε περισσότερα για το ολόλευκο χαμόγελό σας;</b></p>
-                                <p>GianLuca Vacchi: Φυσικά! Το χαμόγελο είναι ένα από τα πιο σημαντικά χαρακτηριστικά για την ελκυστικότητα και την αυτοπεποίθηση. Αποφάσισα να βελτιώσω το χαμόγελό μου με τη βοήθεια των αφαιρούμενων καπλαμάδων, που δίνουν στα δόντια το τέλειο σχήμα και χρώμα. Αυτοί με βοήθησαν να αποκτήσω ένα λαμπερό, κατάλευκο χαμόγελο, που έχει γίνει το ιδιαίτερο χαρακτηριστικό μου.</p>
+                                <p><b>Jurnalistul: Cum s-au reflectat schimbările tale asupra carierei  și vieții personale?</b></p>
+                                <p>Gianluca Vacchi: Transformarea mea a atras atenția nu numai pe internet, ci și în domeniul meu profesional. Datorită popularității, am avut oportunitatea să îmi extind parteneriatele de afaceri și să găsesc noi oportunități. În plus, am câștigat mai multă încredere în mine, ceea ce a avut un impact pozitiv asupra relațiilor mele și vieții personale.</p>
+                                <p><b>Jurnalistul: Nu se poate să nu observăm ți-ai modificat și dantura. Ne poți spune mai multe despre zâmbetul tău alb ca zăpada?</b></p>
+                                <p>Gianluca Vacchi: Desigur! Zâmbetul este unul dintre cele mai importante atribute de atracție și încredere. Am decis să-mi întăresc zâmbetul cu ajutorul fațetelor detașabile care dau dinților o formă și o culoare perfecte. Ele m-au ajutat să am un zâmbet strălucitor, alb ca zăpada, care a devenit trăsătura mea specială.</p>
                                 <img src="images/pics/Pic5.jpeg" alt="" class="webt-article-img">
                                 <br>
-                                <p><b>Δημοσιογράφος: Πώς σας βοήθησαν οι αφαιρούμενοι καπλαμάδες να πετύχετε αυτόν τον στόχο;</b></p>
-                                <p>GianLuca Vacchi: Οι αφαιρούμενοι καπλαμάδες είναι μια καινοτόμος λύση στην οδοντιατρική, που σας επιτρέπει να αλλάξετε το σχήμα, το χρώμα και τη συνολική εμφάνιση του χαμογελού σας. Με τη βοήθειά τους, κατάφερα να αποκτήσω μια τέλεια σειρά δοντιών, που φαίνονται φυσικά και άψογα. Οι αφαιρούμενοι καπλαμάδες μου επιτρέπουν να κρύβω τις ατέλειες, όπως εξογκώματα και λεκέδες στα δόντια.</p>
+                                <p><b>Jurnalistul: Cum au ajutat fațetele detașabile să atingi acest obiectiv?</b></p>
+                                <p>Gianluca Vacchi: Fațetele detașabile sunt o soluție inovatoare în domeniul stomatologiei care vă permite să schimbați forma, culoarea și impresia generală despre zâmbetul vostru. Cu ajutorul lor am reușit să obțin dinții perfecți care arată natural și impecabil. Fațetele îmi permit să ascund defectele, cum ar fi neregularități sau pete pe dinți.</p>
                                 <img src="images/pics/Pic6.png" alt="" class="webt-article-img">
                                 <br>
-                                <p><b>Δημοσιογράφος: Ποια είναι η διαδικασία της εφαρμογής των αφαιρούμενων καπλαμάδων, απαιτείται κάποια ιδιαίτερη φροντίδα για την εφαρμογή τους;</b></p>
-                                <p>GianLuca Vacchi: Οι αφαιρούμενοι καπλαμάδες <a href="#roulette" class="ruletka-a">SwissDent</a> είναι κατασκευασμένοι από λεπτό, ανθεκτικό υποαλλεργικό υλικό, που δεν σκουραίνει από την επαφή με τον καπνό του τσιγάρου, τον καφέ ή το κρασί. Οι αφαιρούμενοι καπλαμάδες προσαρτώνται με χρήση ειδικής σιλικόνης: το σετ περιλαμβάνει δύο stick, οι οποίες πρέπει να μαλακώσουν σε ζεστό νερό, μετά να τοποθετηθούν μέσα στους καπλαμάδες και στη συνέχεια εφαρμόζονται στα δόντια. Το πλαστικό υλικό σκληραίνει, επαναλαμβάνοντας το σχήμα της οδοντοστοιχίας, μετά από το οποίο οι αφαιρούμενοι καπλαμάδες μπορούν να αφαιρεθούν και να φορεθούν εύκολα.</p>
-                                <p>Όσο αφορά την φροντίδα των αφαιρούμενων καπλαμάδων, απαιτεί κυρίως την τακτική στοματική υγιεινή.</p>
+                                <p><b>Jurnalistul: Care este procesul de aplicare a fațetelor detașabile? Este necesară o rutină specială pentru îngrijirea lor?</b></p>
+                                <p>Gianluca Vacchi: Fațetele <a href="#roulette" class="ruletka-a">SwissDent</a> sunt realizate dintr-un material subțire rezistent hipoalergenic care nu se întunecă la contact cu fumul de țigară, cafeaua sau vinul. Ele se fixează cu ajutorul unui silicon special: setul include două bețișoare care trebuie înmuiate în apă clocotită, apoi plasate în interiorul fațetelor și puse pe dinți. Materialul plastic se întărește preluând forma dinților, după care fațetele pot fi ușor scoase și puse.</p>
+                                <p>În ceea ce privește îngrijirea fațetelor detașabile, aceasta pot fi îngrijite ca dinții naturali,  o igienã obișnuitã a cavității bucale.</p>
                                 <img src="images/pics/Pic7.jpeg" alt="" class="webt-article-img">
                                 <br>
-                                <p><b>Δημοσιογράφος: Πώς αλλάξανε τη ζωή και την αυτοπεποίθησή σας οι αφαιρούμενοι καπλαμάδες;</b></p>
-                                <p>GianLuca Vacchi: Οι αφαιρούμενοι καπλαμάδες είχαν βαθιά επίδραση στη ζωή και την αυτοπεποίθησή μου. Το χαμόγελό μου έχει γίνει πλέον "επαγγελματική κάρτα", μου δίνει αυτοπεποίθηση και βοηθά να τραβήξω την προσοχή όλων. Είμαι σίγουρος ότι ένα περιποιημένο και ελκυστικό χαμόγελο μπορεί να αυξήσει την αυτοπεποίθηση και επηρεάζει θετικά τις αλληλεπιδράσεις με άλλους ανθρώπους.</p>
-                                <p><b>Δημοσιογράφος: Και η τελευταία ερώτηση, GianLuca. Τι συμβουλές μπορείτε δώσετε στους αναγνώστες μας, που θέλουν επίσης να κάνουν θετικές αλλαγές στη ζωή τους;</b></p>
-                                <p>GianLuca Vacchi: Κατά τη γνώμη μου, το χαμόγελο δεν είναι μόνο μια φυσική μεταμόρφωση, αλλά και μια αντανάκλαση της εσωτερικής αυτοπεποίθησης και της ευτυχίας. Επομένως, συνιστώ επίσης να φροντίζετε τη συναισθηματική σας ευεξία. Να χαμογελάτε πιο συχνά, να βρείτε χαρά στη ζωή και να περιβάλλεστε με θετικούς ανθρώπους. Αυτό θα σας βοηθήσει να φαίνεστε και να αισθάνεστε καλύτερα.</p>
+                                <p><b>Jurnalistul: Cum ți-au schimbat fațetele detașabile viața și stima de sine?</b></p>
+                                <p>Gianluca Vacchi: Fațetele detașabile au avut o influențã profundã asupra vieții mele și a stimei mele de sine. Zâmbetul acum a devenit cartea mea de vizită care îmi dă încredere și mă ajută să atrag atenția celor din jur. Sunt sigur că un zâmbet bine îngrijit și atrăgător poate crește stima de sine și influenţează pozitiv interacţiunea cu alte persoane.</p>
+                                <p><b>Jurnalistul: Și ultima întrebare, Gianluca: Ce sfaturi puteți da cititorilor noștri care vor să facă schimbări pozitive în viaţa lor?</b></p>
+                                <p>Gianluca Vacchi: După părerea mea, zâmbetul nu este doar o transformare fizică, ci și o reflectare a încrederii și fericirii interioare. De aceea, vă recomand să aveți grijă și de bunăstarea voastră emoțională. Zâmbiți mai des, găsiți bucurie în viață și înconjurați-vă de oameni pozitivi. Acest lucru vă va ajuta să arătați și să vă simțiți mai bine.</p>
                                 <img src="images/pics/Pic8.jpeg" alt="" class="webt-article-img">
                                 <br>
-                                <p>Τέλος, να είστε τολμηροί και γεμάτοι αυτοπεποίθηση. Κάθε άτομο είναι μοναδικό και όμορφο με τον δικό του τρόπο και το χαμόγελό σας πρέπει να αντανακλά την προσωπικότητά σας. Μην φοβάστε να εκφραστείτε και να είστε ειλικρινείς. Άλλωστε, ένα ειλικρινές χαμόγελο είναι που συμβαδίζει με την αληθινή ευτυχία.</p>
-                                <p><b>Δημοσιογράφος: Σας ευχαριστώ, GianLuca, για την ειλικρίνεια και τις πολύτιμες συμβουλές σας. Η ιστορία σας μας εμπνέει να προσπαθήσουμε για την καλύτερη εκδοχή του εαυτού μας. Σας ευχόμαστε συνεχή επιτυχία και ένα λαμπερό χαμόγελο!</b></p>
-                                <p>GianLuca Vacchi: Σας ευχαριστώ πολύ! Χαίρομαι που η ιστορία μου μπορεί να εμπνεύσει πολλούς ανθρώπους. Εύχομαι σε όλους τους αναγνώστες σας να βρουν το τέλειο χαμόγελό τους και να μην το  αποχωρίζονται σε όλη τους τη ζωή.</p>
+                                <p>Și în final, fiți curajoși și încrezători în voi. Fiecare persoană este unică și frumoasă în felul ei, iar zâmbetul vostru trebuie să reflecte individualitatea voastră. Nu vă fie frică să vă exprimați și să fiți sinceri. Doar un zâmbet sincer merge mână în mână cu fericirea adevărată.</p>
+                                <p><b>Jurnalistul: Mulțumim, Gianluca, pentru deschiderea și sfaturile valoroase. Povestea ta ne inspiră să ne străduim să fim cea mai bună versiune a noastră. Vă dorim succes și un zâmbet strălucitor!</b></p>
+                                <p>Gianluca Vacchi: Mulțumesc mult! Mă bucur că povestea mea poate inspira pealții. Le doresc tuturor cititorilor voștri să-și găsească zâmbetul ideal și să nu se despartă de el niciodată.</p>
                                 <img src="images/pics/Pic9.jpeg" alt="" class="webt-article-img">
                                 <br>
-                                <p><b>Τι περιμένετε; Παραγγείλετε τους αφαιρούμενους καπλαμάδες <a href="#roulette" class="ruletka-a">SwissDent</a> τώρα, για τέλεια ολόλευκα δόντια!</b></p>
+                                <p><b>Ce așteptați? Comandați fațetele detașabile <a href="#roulette" class="ruletka-a">SwissDent</a> chiar acum, pentru a obține dinți perfect albi!</b></p>
                                 
                                 
                                 
@@ -486,13 +436,13 @@ a:visited,
                                 
                                 
                                 <h3 style="text-align:center;display: block; margin: 0.5em 0px; line-height: 1.2; font-weight: bold; text-transform: uppercase;font-size: 18px;">
-                                    ΕΙΔΙΚΑ ΓΙΑ ΤΟΥΣ ΑΝΑΓΝΩΣΤΕΣ ΜΑΣ ΔΗΜΟΣΙΕΥΟΥΜΕ ΜΙΑ ΕΠΙΣΗΜΗ ΦΟΡΜΑ ΠΑΡΑΓΓΕΛΙΑΣ SWISSDENT.
+                                    ÎN SPECIAL PENTRU CITITORII NOȘTRI, PUBLICĂM FORMULARUL OFICIAL DE COMANDĂ SWISSDENT.
                                 </h3>
                                 <center>
                                     <div class="ruletka-p" id="roulette">
-                                        <h2>ΠΡΟΣΟΧΗ! Προσοχή στις απομιμήσεις!</h2>
-                                        <p>Μπορείτε να λάβετε προϊόντα στην περιοχή σας (παράδοση σε όλη την Ελλάδα) με έκπτωση 50% μόνο
-                                            <a href="#roulette" class="ruletka-a">εάν συμπληρώσετε την επίσημη φόρμα παραγγελίας</a>.</p>
+                                        <h2>ATENȚIUNE! Feriți-vă de falsuri!</h2>
+                                        <p>Puteți obține fatetele detasabile în România cu o reducere de 50% numai dacă completați
+                                            <a href="#roulette" class="ruletka-a">formularul oficial de comandă</a>.</p>
                                     </div>
                                     <div class="card spin-wrapper" id="bags__sales" style="display:none">
                                         <div class="card__instructions">
@@ -744,17 +694,17 @@ a:visited,
                                     </div>
                                     <div class="order_block" style="display:block">
                                         <div><img src="images/prod.png"></div>
-                                        <p class="price"> 
+                                        <p class="price">
                                             <br>
-                                            <del style="font-size:22px;">78 &euro;</del>
-                
+                                            <del style="font-size:22px;">370 lei</del>
+        
                                             <span class="price_red" style="font-size: 30px;
                                             color: red;
                                             margin-left: 15px;
-                                            font-weight: 700;">39 &euro;</span>
-                                    </p>
-                                        <h3>Το μόνο που χρειάζεται είναι να εισάγετε το όνομα και τον αριθμό του κινητού σας τηλεφώνου.<br/>
-                                            Βιαστείτε! Υπολειπόμενος χρόνος:<br><span class="time_remains" id="min">30</span> : <span class="time_remains" id="sec">00</span></h3>
+                                            font-weight: 700;">185 lei</span>
+                                        </p>
+                                        <h3>Tot ce trebuie să faceți este să introduceți numele și numărul de telefon.
+                                            <br>Grăbește-te! Mai ai timp:<br><span class="time_remains" id="min">30</span> : <span class="time_remains" id="sec">00</span></h3>
                                         <!-----------------------  --------------------------->
                                         <form method="post" class="main-order-form" id="order_form" geo="pl" action="api.php" 
 	onsubmit="return validate_form(this, 'Sprawdź, czy wprowadzone dane są poprawne');">
@@ -765,16 +715,29 @@ a:visited,
 										
                                             <div class="input-group tooltip-hide">
                                                 <input type="text" class="input-roulette" name="name" id="input-name" 
-												placeholder="Εισάγετε το όνομά σας" required>
+												placeholder="Introduceți numele dvs" required>
                                             </div>
                                             <div class="input-group tooltip-hide">
                                                 <input type="tel" class="input-roulette" name="phone" id="input-phone" 
-												placeholder="Τηλέφωνο (ενεργό κινητό)" required>
+												placeholder="Telefon (mobil activ)" required>
                                             </div>                                        
-                                            <button class="submit-roulette" style="width: 250px;">ΚΑΝΤΕ ΠΑΡΑΓΓΕΛΙΑ</button>
+                                            <button class="submit-roulette" style="width: 250px;">COMANDĂ</button>
+                                            <p class="footnote1">Criptarea este utilizată pentru a garanta protecția datelor dvs.</p>
 											</form>
                                         <!-----------------------  --------------------------->
                                     </div>
+                                    <style>
+                                        .main-content-font p.footnote1 {
+                                            line-height: 15px!important;
+                                            text-indent: 0!important;
+                                            font-size: 10px!important;
+                                            margin: 10px 0 0!important;
+                                            text-align: center!important;
+                                            padding: 0!important;
+                                            color: #888!important;
+                                            border-bottom: none!important;
+                                        }
+                                    </style>
                                     <div class="spin-result-wrapper">
                                         <div class="pop-up-window">
                                             <div class="close-popup"></div>
@@ -987,10 +950,10 @@ a:visited,
                                 }
                             }
                         </style>
-                        <div class="vk-container" style="float: none;">
+                        <div class="vk-container" style="float: none">
                             <div class="vk-header">
                                 <div class="vk-logo"></div>
-                                <div class="vk-header-text"><span class="comment-count">194 σχόλια σήμερα</span></div>
+                                <div class="vk-header-text"><span class="comment-count">194 comentarii astăzi</span></div>
                             </div>
                             <div class="vk-container">
                                 <div class="vk-container">
@@ -1002,16 +965,16 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     4
                                                 </div>
-                                                <p class="user_name">Σταύρος Πετρόπουλος </p>
-                                                <p class="text"> Ποιος είχε παραγγείλει αυτούς τους καπλαμάδες, σας αρέσει η ποιότητα, καλό ή κινέζικο ψεύτικο προϊόν;
+                                                <p class="user_name">Andrei Ionescu   </p>
+                                                <p class="text"> Cine a comandat aceste fațete, cum este  alitatea, bună sau este un fals chinezesc?
                                                 </p>
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα</p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă</p>
                                             </div>
                                         </div>
                                         <div class="comment">
@@ -1021,43 +984,45 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     <img src="./images/heart.png" alt="">
                                                 </div>
-                                                <p class="user_name">Ειρήνη Αλεξάνδρου </p>
-                                                <p class="text">Σταύρο, τους παρήγγειλα εδώ, μέσω της επίσημης φόρμας παραγγελίας. Είναι πρωτότυπο προϊόν, όχι ψεύτικο. Έχω μεγάλο κενό ανάμεσα στα πάνω μπροστινά δόντια, είχα πολύ κόμπλεξ γι'αυτό. Πήγα στον οδοντίατρο, μου είπαν ότι μόνο με τα σιδεράκια μπορεί να διορθωθεί η κατάστασή μου. Και για το υπόλοιπο της ζωής μου θα πρέπει να κοιμάμαι με την προστατευτική κάπα, συν το ότι αυτό πονάει. SwissDent ήταν μια πραγματική σωτηρία για μένα! Εύκολο στην εγκατάσταση, σταθερό και σφιχτό κράτημα. </p>
+                                                <p class="user_name">Ana Popescu  </p>
+                                                <p class="text">Andrei, am comandat chiar aici, prin formularul oficial de comandă. Acesta este originalul, nu o chinezărie. Am o gaură mare între dinții din față de sus, foarte problematică. Am mers la dentist, mi-au spus că pot corecta doar cu sistemul de bretele, dar pentru tot restul vieții va trebui să dorm cu un scut dentar plus că doare. Snap on Smile a fost o adevărată salvare pentru mine! Ușor de instalat, rezistă bine.
+                                                </p>
                                                 <img src="images/g1.jpg" style="max-width: 230px;">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα</p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă</p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/3.1.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Κωνσταντίνος Γεωργίου</p>
-                                                <p class="text">Τους χρησιμοποιώ εδώ και 3 μήνες. Δεν υπάρχει καμία ενόχληση, η ομιλία δεν έχει αλλάξει, μετά την εγκατάσταση, τους συνήθισα σε περίπου 10 λεπτά. Δεν σκουραίνουν κατά τη χρήση. Και η τιμή τους είναι τεράστιο πλεονέκτημα.</p>
+                                                <p class="user_name">Mihai Popa </p>
+                                                <p class="text">Le folosesc și eu de 3 luni. Nu am avut disconfort, nu am avut probleme cu vorbirea după instalare m-am obișnuit în aproximativ 10 minute. Nu s-au schimbat la culoare pe parcursul utilizării. Iar prețul lor este un avantaj imens.
+                                                </p>
                                                 <img src="images/g3.jpg" style="max-width: 230px;">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα</p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă</p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/4.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Όλγα Ξένου </p>
-                                                <p class="text">Φοβάμαι ότι θα φαίνονται αφύσικα. Μπορείτε να μοιραστείτε μια φωτογραφία σας με τους καπλαμάδες; </p>
+                                                <p class="user_name">Maria Dumitrescu  </p>
+                                                <p class="text">Mi-e frică că vor arăta nenatural. Puteți să arătați vreo poză cu ele?</p>
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα</p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă</p>
                                             </div>
                                         </div>
                                         <div class="comment">
@@ -1067,15 +1032,16 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     3
                                                 </div>
-                                                <p class="user_name">Άννα Τσουκαλά</p>
-                                                <p class="text">Εδώ. Τους χρησιμοποιώ εδώ και ενάμιση μήνα. Όταν τους εγκατέστησα και ήρθα στη δουλειά, όλοι νόμιζαν ότι λεύκανα τα δον μου (έχω πολύ κίτρινο σμάλτο από τη φύση μου), ζήτησαν τον αριθμό τηλεφώνου του οδοντιάτρου μου))) </p>
+                                                <p class="user_name">Elena Stan</p>
+                                                <p class="text">Iată. Folosesc de o lună și jumătate. Când le-am instalat și am venit la muncă cu ele toți colegii au crezut că mi-am albit dantura (am un smalț foarte galben), mi-au cerut numărul dentistului meu)))
+                                                </p>
                                                 <img src="images/g5.jpg" style="max-width: 230px;">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα</p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă</p>
                                             </div>
                                         </div>
                                         <div class="comment">
@@ -1085,47 +1051,50 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     <img src="./images/heart.png" alt="">
                                                 </div>
-                                                <p class="user_name">Αλέξανδρος Πατριώτης </p>
-                                                <p class="text">Εργάζομαι ως μεσίτης και το χαμόγελό μου είναι το εισόδημά μου. Αν δεν έχεις όμορφο χαμόγελο, τότε δεν θα μπορέσεις να κερδίσεις έναν πελάτη. Και το στόμα μου ήταν σε τρομερή κατάσταση, στραβά δόντια, και το χρώμα ήταν έτσι κι έτσι. Οι τιμές σε οδοντίατρο ξέρετε ποιες είναι, δεν μπορούσα να τις αντέξω. SwissDent έγινε πραγματικό εύρημα για μένα. Η τιμή είναι μικρή, αλλά το αποτέλεσμα είναι φανταστικό. Μετά την αγορά των καπλαμάδων, το εισόδημά μου σχεδόν διπλασιάστηκε. Νομίζω ότι είναι υπέροχο αποτέλεσμα!
+                                                <p class="user_name">Cristian Stoica</p>
+                                                <p class="text">Lucrez ca agent imobiliar și zâmbetul este venitul meu. Dacă nu ai un zâmbet frumos, nu vei putea să-ți atragi clienții. Iar gura mea era pur și simplu groaznică, dinții inegali și culoarea așa și așa. Prețurile la dentist le știți cum sunt, nu mi le puteam permite. Snap on Smile a fost o adevărată descoperire pentru mine. Prețul este mic, iar rezultatul este ca de la cel mai bun dentist. După ce am cumpărat fațetele, veniturile mele au crescut aproape de două ori. După părerea mea, un rezultat excelent!
                                                 </p>
                                                 <img src="images/g6.jpg" style="max-width: 230px;">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/7.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Μαρία Στρατούλη </p>
-                                                <p class="text">Δουλεύω με πολλούς ανθρώπους. Προσπαθώ να πηγαίνω τακτικά στον οδοντίατρο, κάνω λεύκανση και καθαρισμό. Και πρόσφατα παρατήρησα ότι τα δόντια μου έχουν γίνει ευαίσθητα, ο γιατρός είπε ότι δεν μπορεί να γίνει περισσότερη λεύκανση και συμβούλεψε τους καπλαμάδες SwissDent ως εναλλακτική λύση. Αμφιβάλλω, σκέφτηκα ότι θα ήταν πολύ άβολο και θα άλλαζε η ομιλία μου. Αλλά και πάλι αποφάσισα να δοκιμάσω, γιατί η τιμή για αυτούς είναι ακόμη χαμηλότερη από ό, τι για τον τακτικό καθαρισμό. Όλοι οι φόβοι μου αποδείχθηκαν αβάσιμοι. Είναι πολύ λεπτοί, οπότε δεν τους νιώθεις καν, αλλά ταυτόχρονα είναι πολύ ανθεκτικοί, δεν αλλάζει η αφή τους, δεν σκουραίνουν με τον καιρό, ούτε από τον καφέ ούτε από το τσιγάρο. Σταθερό και σφιχτό κράτημα, μπορείτε να τους φοράτε όλη την ημέρα και να φάτε με αυτά. Τα υλικά είναι υψηλής ποιότητας. Εύκολοι στον καθαρισμό. Οπότε είμαι πολύ ευχαριστημένη με την αγορά.
+                                                <p class="user_name">Ioana Mihai </p>
+                                                <p class="text">Și eu lucrez cu oamenii. Încerc să merg la dentist regulat, fac albire și curățare. Dar în ultima vreme am observat că dinții mei au devenit sensibili, doctorul a spus că nu mai pot face albire și mi-a recomandat Snap on Smile ca alternativă. Aveam îndoieli, am crezut că vor fi foarte inconfortabile și dicția se va schimba. Dar totuși am decis să încerc, pentru că prețul lor este chiar mai mic decât o curățare obișnuită. Toate temerile mele s-au dovedit nefondate. Sunt foarte subțiri, așa că nici nu le simți, dar în același timp foarte rezistente, dicția nu se schimbă, nu se întunecă cu timpul, nici de la cafea, nici de la țigări. Se țin strâns, poți să mergi cu ele toată ziua și să mănânci. Materialele sunt foarte de calitate. Este foarte ușor să ai grijă de ele. Așa că sunt foarte mulțumită de cumpărare.
+                            
+                            
                                                 </p>
                         
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/8.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Γιάννα Πετράκη </p>
-                                                <p class="text">Τα δόντια μου ήταν πάντα σε καλή κατάσταση, αλλά θέλω να είμαι απολύτως τέλεια)) Με αυτούς τους καπλαμάδες, το χαμόγελο έγινε σαν σταρ του Χόλιγουντ! </p>
+                                                <p class="user_name">Gabriela Vasile</p>
+                                                <p class="text">Eu am avut dintotdeauna dinți destul de buni, dar vreau să fie perfecți)) Cu aceste fațete zâmbetul meu a devenit ca al unei stele de la Hollywood!
+                                                </p>
                             
                                                 <img src="images/g8.jpg" style="max-width: 230px;">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                     
                                         </div>
@@ -1136,173 +1105,181 @@ a:visited,
                                                     <img src="./images/like.png" alt="">
                                                     5
                                                 </div>
-                                                <p class="user_name">Βικτώρια Στεργίου </p>
-                                                <p class="text">Έχω ακούσει πολλές φορές για τους αφαιρούμενους καπλαμάδες ως εναλλακτική των κεραμικών, αλλά δεν μπορώ να αποφασίσω ποιους να παραγγείλω καλύτερα. Φοβάμαι ιδιαίτερα ότι δεν θα ταιριάζουν στο μέγεθος... Μοιραστείτε την εμπειρία σας παρακαλώ.
+                                                <p class="user_name">Alina Petrescu</p>
+                                                <p class="text">Am auzit de multe ori despre fațetele detașabile, ca alternativă la cele ceramice, dar nu pot să aleg care sunt mai bune de comandat. Mai ales mi-e frică să nu se potrivească la dimensiune… Vă rog să împărtășiți experiența voastră
                             
                                                 </p>
                         
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/10.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Γωγώ Ελευθεριάδη</p>
-                                                <p class="text">Βικτώρια, SwissDent έχει ένα μέγεθος που ταιριάζει σε όλους. Ξέρω από την εμπειρία της οικογένειάς μου. Τα δόντια μου είναι μικρά και καθόλου ομοιόμορφα, και ο άντρας μου έχει μεγάλα δόντια, και όμως οι καπλαμάδες ταιριάζουν απόλυτα σε αυτόν και σε εμένα.
+                                                <p class="user_name">Laura Dima </p>
+                                                <p class="text">Alina, Snap on Smile are o dimensiune universală, deci se potrivește tuturor. Știu din experiența personală. Eu am dinții mici și inegali, iar soțul meu are dinții mai mari, și ne-au venit perfect atât lui, cât și mie.
                                                 </p>
+                            
                                                 <img src="images/g10.jpg" style="max-width: 230px;">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/11.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Βικτώρια Στεργίου </p>
-                                                <p class="text">Γωγώ, αν οι καπλαμάδες φορεθούν για αρκετό καιρό, τα δόντια θα ισιώσουν;</p>
+                                                <p class="user_name">Alina Petrescu</p>
+                                                <p class="text">Laura, iar dacă le porți suficient de mult dinții se aliniază?</p>
                         
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/12.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Γωγώ Ελευθεριάδη</p>
-                                                <p class="text">Βικτώρια, σίγουρα δεν είναι σιδεράκια, αλλά τα δόντια μου έχουν γίνει πιο ίσια.</p>
+                                                <p class="user_name">Laura Dima </p>
+                                                <p class="text">Alina, acesta nu este  un aparat dentar de îndreptare, dar dinții mei au devenit mai drepți.
+                                                </p>
                                                 <img src="images/g12.jpg" style="max-width: 230px;">
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
-                                            <img class="avatar" src="images/comm/18.jpg">
+                                            <img class="avatar" src="images/comm/21.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Βιβή Σπανού</p>
-                                                <p class="text">Πέρασα πολύ χρόνο ερευνώντας τον καλύτερο τρόπο για να φτιάξω το χαμόγελό μου. Έχω κακά δόντια από τη φύση μου και πολλά σφραγίσματα, όποιο χρώμα και να επιλέξω κατά την λεύκανση, εξακολουθεί να μην είναι πολύ ωραία. Και κατέληξα στο συμπέρασμα ότι SwissDent είναι η καλύτερη λύση. Το πρώτο είναι η τιμή. Συγκριτικά με τους κεραμικούς καπλαμάδες ή την γέφυρα, που είναι πολύ ακριβές μέθοδοι. Το δεύτερο είναι ότι δεν χρειάζεται να τροχιστούν τα δόντια σας. Τρίτον, SwissDent είναι πολύ άνετοι και φαίνονται φυσικοί. Γενικά, στην ελάχιστη τιμή, πήρα ένα εκθαμβωτικό χαμόγελο. Όποιος αμφιβάλλει αν θα παραγγείλει ή όχι, τους συνιστώ ανεπιφύλακτα!</p>
+                                                <p class="user_name">Andreea Georgescu </p>
+                                                <p class="text">M-am gândit mult timp la cum să-mi corectez cel mai bine zâmbetul. Problema este că am dinți răi de la natură și foarte multe plombe, oricât de mult aș albi culoarea, tot se colorează foarte mult. Și am ajuns la concluzia că Snap on Smile este cea mai bună soluție. Primul lucru este prețul. Dacă pui furnire ceramice sau punte este foarte scump. Al doilea lucru este că nu trebuie să-ți tai dinții. Al treilea lucru este că Snap on Smile sunt foarte confortabile și arată natural. În general, pentru un preț minim, am primit un zâmbet strălucitor. Pentru cine se îndoiește dacă merită să comande sau nu, eu recomand cu siguranță!
+                            
+                                                </p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/14.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Νίκη Θεοφιλάτου </p>
-                                                <p class="text">Παρήγγειλα τους καπλαμάδες για τον εαυτό μου. Η παράδοση είναι πολύ γρήγορη, μόνο 2 ημέρες. Τοποθετούνται σε μόλις 2 λεπτά, σταθερό και σφιχτό κράτημα, δεν πέφτουν, δείχνουν πολύ φυσικοί. Δυστυχώς, τους παρήγγειλα όταν δεν υπήρχε ακόμη η έκπτωση, αλλά ακόμα και σε αυτή την τιμή, είναι πολύ οικονομικό προϊόν. Είμαι πολύ ικανοποιημένη με την παραγγελία. </p>
+                                                <p class="user_name">Roxana Ionescu </p>
+                                                <p class="text">Mi-am comandat și eu fațete. Livrarea este foarte rapidă, a durat doar 2 zile. Se instalează în 2 minute, se țin bine, nu cad, arată foarte natural. Din păcate le-am comandat când încă nu era reducere, dar chiar și la prețul întreg, au fost totuși foarte ieftine. Sunt foarte mulțumită de comandă.
+                                                </p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/15.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Ανδρέας Νομικός</p>
-                                                <p class="text">Πείτε μου, αν μου λείπουν μερικά δόντια, θα μου ταίριαζαν; Δεν θα πέσουν;</p>
+                                                <p class="user_name">Ionut Radu </p>
+                                                <p class="text">Spuneți-mi vă rog, dacă îmi lipsesc câțiva dinți, mi se potrivesc? Nu vor cădea?</p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/16.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Άννα Τσουκαλά  </p>
-                                                <p class="text">Ανδρέα, ο μπαμπάς μου τους φοράει μισό χρόνο, του λείπουν 6 δόντια. Λέει ότι εφαρμόζουν τέλεια, δεν υπάρχει ενόχληση στο στόμα και έχουν σταθερό και σφιχτό κράτημα.</p>
+                                                <p class="user_name">Roxana Ionescu </p>
+                                                <p class="text">Ionut, tatăl meu le poartă de jumătate de an, îi lipsesc 6 dinți. Spune că stau perfect, nu are disconfort în gură și se țin bine.</p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/17.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Ανδρέας Νομικός </p>
-                                                <p class="text">Άννα, ευχαριστώ για την απάντησή σου. Θα τους παραγγείλω τώρα, ειδικά με μια τέτοια έκπτωση.
+                                                <p class="user_name">Ionut Radu  </p>
+                                                <p class="text">Roxana, mulțumesc pentru răspuns. Îmi comand și eu, mai ales că acum e o reducere.
+                            
                                                 </p>
                         
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/13.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Στάθης Βλάχος </p>
-                                                <p class="text">Από την παιδική ηλικία, όλα τα δόντια μου έχουν λεκέδες, είναι μια ασθένεια φθορίωσης, όποιος το ζει ξέρει τι είδους μαρτύριο είναι. Το θέμα είναι στο νερό της πόλης όπου πέρασα τα παιδικά μου χρόνια - υπάρχει υπερβολική δόση φθορίου. Ο οδοντίατρος με απέτρεψε από τη λεύκανση, είπε ότι η διαφορά στο χρώμα θα ήταν αισθητή και μετά σκέφτηκα τους κεραμικούς καπλαμάδες, αλλά αφού έμαθα την τιμή κατάλαβα ότι θα έπρεπε να πάρω ένα δάνειο (άρχισα να ψάχνω για εναλλακτική λύση και βρήκα SwissDent, αφού διάβασα τις κριτικές, παρήγγειλα μέσω της επίσημης φόρμας παραγγελίας, για να μην πέσω σε ένα κινέζικο ψεύτικο προϊόν. Τώρα δεν μπορώ παρά να χαμογελάω όλη την ώρα!</p>
+                                                <p class="user_name">Bogdan Marinescu </p>
+                                                <p class="text">De când eram copil am avut toți dinții cu pete, este o boală numită fluoroză, cine a auzit de această boală știe ce chin este. Problema este apa din orașul unde mi-am petrecut copilăria - acolo era un exces de fluor. Doctorul m-a întors de la albirea dinților, mi-a spus că diferența de culoare va fi vizibilă și atunci m-am gândit la furnirele ceramice, dar când am aflat prețul am înțeles că va trebui să iau un credit. Am început să caut o alternativă și am găsit Snap on Smile, și citind recenziile am comandat prin formularul oficial ca să nu dau peste un fals chinezesc. Acum nu pot să nu zâmbesc mereu!
+                                                </p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/19.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Στέλλα Γεωργούλη </p>
-                                                <p class="text">Παρήγγειλα τους απίστευτους καπλαμάδες εδώ! Δείτε πόσο ΦΥΣΙΚΟΙ δείχνουν! Πολύ όμορφο αποτέλεσμα, άλλαξε εντελώς το χαμόγελο! Έχω τώρα ένα τόσο υπέροχο χαμόγελο με αυτούς τους καπλαμάδες! Τέλειο προϊόν!</p>
+                                                <p class="user_name">Cristina Neagu  </p>
+                                                <p class="text">Fațetele sunt super, aici am comandat! Arată NATURAL! Foarte frumos, pur și simplu mi s-a schimbat zâmbetul absolut! Ce Z MBET SUPERB am cu aceste fațete! Perfect!</p>
                                             </div>
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <div class="comment">
                                             <img class="avatar" src="images/comm/20.jpg">
                                             <div class="comm_text">
-                                                <p class="user_name">Φωτεινή Μπουρνά </p>
-                                                <p class="text">Τα δόντια μου ήταν πάντα πολύ λεπτά, ημιδιαφανή, στραβά, οι κυνόδοντες βγαίνουν έξω, ξέρετε, αυτό είναι μια φρίκη για μια κοπέλα. Επίσης, φοβάμαι τους οδοντίατρους. Αλλά αποδεικνύεται ότι υπάρχει ένας πολύ καλός τρόπος για να αποκτήσετε ένα χαμόγελο του Χόλιγουντ χωρίς να επισκεφτείτε έναν οδοντίατρο – οι αφαιρούμενοι καπλαμάδες SwissDent. Στην αρχή φοβόμουν να τσιμπήσω κάτι, όχι να φάω κανονικά, νόμιζα ότι θα πέσουν) Όχι, φυσικά, κρατιούνται σφιχτά και σταθερά,  φαίνονται απλά τέλεια. Γενικά τώρα ΘΕΛΩ να χαμογελάω! Όχι όπως πριν, με σφιγμένα χείλη έβγαζα φωτογραφίες!!!</p>
+                                                <p class="user_name">Monica Popescu</p>
+                                                <p class="text">Dinții mei au fost întotdeauna stricăcioși, subțiri, semi-transparenți, strâmbi, colții ies în evidență, înțelegeți voi pentru o fată datura este foarte importantă. Încă mi-e frică de dentiști. Dar se pare că există o soluție minunată să obții un zâmbet hollywoodian fără să vizitezi dentistul - fațetele detașabile Snap on Smile. La început mi-era frică să mușc ceva, credeam că acum vor zbura) Dar se țin bine și arată pur și simplu perfect. În general acum VREAU să zâmbesc! și nu ca înainte, când mă fotografiam cu buzele strânse!!
+                                                </p>
                                             </div>
                         
                                             <div class="down-menu">
-                                                <p class="down-menu-like">Αρέσει</p>
-                                                <p class="down-menu-answer none">Απάντηση</p>
-                                                <p class="down-menu-translate none">Μετάφραση</p>
-                                                <p class="time">  Πριν από μια ώρα </p>
+                                                <p class="down-menu-like">Apreciază</p>
+                                                <p class="down-menu-answer none">Răspunde</p>
+                                                <p class="down-menu-translate none">Traduceți</p>
+                                                <p class="time">  O oră în urmă </p>
                                             </div>
                                         </div>
                                         <br>
-                                        <a class="knopka" href="#roulette" style="display:block; max-width:400px; margin:0 auto">ΠΑΡΑΓΓΕΙΛΕΤΕ <br>SWISSDENT</a>
+                                        <a class="knopka" href="#roulette" style="display:block; max-width:400px; margin:0 auto">COMANDĂ <br>SWISSDENT</a>
                                         <br>&nbsp;<br>
                                     </div>
                                 </div>
@@ -1315,7 +1292,7 @@ a:visited,
                 <aside id="js_sidebar" class="widget-area" style="height: 100%!important;" itemscope itemtype="http://schema.org/WPSideBar">
                     <div class="sticky-sidebar js-sticky-sidebar">
                         <div id="wpshop_widget_articles-9" class="widget widget_wpshop_widget_articles">
-                            <div class="widget-header">Δημοσιεύθηκε πρόσφατα</div>
+                            <div class="widget-header">Publicări recente</div>
                             <div class="widget-articles">
                                 <article class="post-card post-card--vertical">
                                     <div class="post-card__thumbnail">
@@ -1328,7 +1305,7 @@ a:visited,
                                     </div>
                                     <div class="post-card__body">
                                         <div class="post-card__title">
-                                            <a href="#roulette" class="scrollto">Οι ισχυροί σεισμοί αποκάλυψαν τα μυστικά του εσωτερικού πυρήνα της Γης</a>
+                                            <a href="#roulette" class="scrollto">Cutremurele puternice au dezvăluit secretele nucleului interior al Pământului</a>
                                         </div>
                                         <div class="post-card__meta">
                                             <span class="post-card__comments">23</span>
@@ -1346,7 +1323,7 @@ a:visited,
                                     </div>
                                     <div class="post-card__body">
                                         <div class="post-card__title">
-                                            <a href="#roulette" class="scrollto">Γίνετε εθελοντής για να βοηθήσετε στην φροντίδα του πλανήτη</a>
+                                            <a href="#roulette" class="scrollto">Deveniți voluntar pentru a vă ajuta să aveți grijă de planetă</a>
                                         </div>
                                         <div class="post-card__meta">
                                             <span class="post-card__comments">4</span>
@@ -1364,7 +1341,7 @@ a:visited,
                                     </div>
                                     <div class="post-card__body">
                                         <div class="post-card__title">
-                                            <a href="#roulette" class="scrollto">Οι επιστήμονες ανέφεραν πόσο χρόνο χρειάζεται να αφιερώσετε στη σωματική σας δραστηριότητα</a>
+                                            <a href="#roulette" class="scrollto">Oamenii de știință au depistat cât timp trebuie să cheltuiți pentru activitatea fizică</a>
                                         </div>
                                         <div class="post-card__meta">
                                             <span class="post-card__comments">51</span>
@@ -1382,7 +1359,7 @@ a:visited,
                                     </div>
                                     <div class="post-card__body">
                                         <div class="post-card__title">
-                                            <a href="#roulette" class="scrollto">Ilse Bing: πρωτοπόρος της φωτογραφίας μεταξύ αφαίρεσης και κίνησης</a>
+                                            <a href="#roulette" class="scrollto">Ilse Bing: pionier al fotografiei între abstractizare și mișcare</a>
                                         </div>
                                         <div class="post-card__meta">
                                             <span class="post-card__comments">13</span>
